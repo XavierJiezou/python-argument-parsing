@@ -1,5 +1,5 @@
 English | [简体中文](/README.zh.md)
-# 1. Introduction
+# Introduction
 There are four common ways to realize the command-line arguments parsing of Python.
 - `sys.argv`
 - `optparse`
@@ -7,10 +7,10 @@ There are four common ways to realize the command-line arguments parsing of Pyth
 - `argparse`
 
 This is a summary of all Python command-line argument parsing Modules.
-# 2. Install
+# Install
 They are all standard libraries of Python and do not need to be installed additionally.
-# 3. Usage
-## 3.1. sys.argv👍
+# Usage
+## sys.argv👍
 `sys.argv` is the **simplest implementation** for parsing command-line options, which is the list of command line arguments passed to a Python script. In particular, `argv[0]` represents the script name.
 
 ---
@@ -39,7 +39,7 @@ python 1_sys.argv.py 1 2
 ```bash
 3
 ```
-## 3.2. getopt
+## getopt
 `getopt` module is a parser for command line options whose API is designed to be familiar to users of the C `getopt()` function, which helps scripts to parse the command line arguments in `sys.argv`. **But few people use it now, please use `argparse` module instead.**
 
 ---
@@ -70,7 +70,7 @@ python 2_getopt.py -a 1 -b 2
 ```bash
 3
 ```
-## 3.3. optparse
+## optparse
 `optparse` is a more convenient, flexible, and powerful library for parsing command-line options than the old `getopt` module.
 
 ---
@@ -105,7 +105,7 @@ python 3_optparse.py -a 1 -b 2
 ```bash
 3
 ```
-## 3.4. argparse👍
+## argparse👍
 `argparse` module makes it easy to write user-friendly command-line interfaces. Note also that `argparse` is based on `optparse`, and therefore very similar in terms of usage.
 
 ---
@@ -143,7 +143,7 @@ python 4_argparse.py -a 1 -b 2
 ```bash
 3
 ```
-# 4. Reference
+# Reference
 > [[1] https://docs.python.org/3/library/sys.html#sys.argv](https://docs.python.org/3/library/sys.html#sys.argv)
 > 
 > [[2] https://docs.python.org/3/library/getopt.html#module-getopt](https://docs.python.org/3/library/getopt.html#module-getopt)
