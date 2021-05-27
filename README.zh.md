@@ -12,11 +12,11 @@ Python共有四种常用的实现命令行参数解析的模块，本文是对�
 `sys.argv`是实现命令行参数解析最简单的方式，它是传递给Python脚本的命令行参数的列表。特别地，`argv[0]`代表脚本名。
 
 ---
-推荐
+**推荐**
 
 ⭐⭐⭐⭐⭐
 
-示例
+**示例**
 ```python
 # 1_sys.argv.py
 import sys
@@ -29,11 +29,11 @@ def add(a, b):
 if __name__ == '__main__':
     print(add(int(sys.argv[1]), int(sys.argv[2])))
 ```
-运行
+**运行**
 ```bash
 python 1_sys.argv.py 1 2
 ```
-输出
+**输出**
 ```bash
 3
 ```
@@ -41,11 +41,11 @@ python 1_sys.argv.py 1 2
 `getopt` 命令行参数解析模块的API设计与C引言的`getopt()`函数类似，这有助于在`sys.argv`中解析参数。**但现在几乎没人使用了， 请用`argparse`模块替代。**
 
 ---
-推荐
+**推荐**
 
 ⭐⭐⭐
 
-示例
+**示例**
 ```python
 import sys, getopt
 
@@ -60,11 +60,11 @@ if __name__ == "__main__":
     b = int(args[2])
     print(add(a, b))
 ```
-运行
+**运行**
 ```bash
 python 2_getopt.py -a 1 -b 2
 ```
-输出
+**输出**
 ```bash
 3
 ```
@@ -72,11 +72,11 @@ python 2_getopt.py -a 1 -b 2
 `optparse`是一个更方便，灵活，强大的库，用于解析命令行选项，相比于之前的`getopt`模块。
 
 ---
-推荐
+**推荐**
 
 ⭐⭐⭐⭐
 
-示例
+**示例**
 ```python
 # 3_optparse.py
 from optparse import OptionParser
@@ -95,11 +95,11 @@ if __name__ == '__main__':
     b = int(options.b)
     print(add(a, b))
 ```
-运行
+**运行**
 ```bash
 python 3_optparse.py -a 1 -b 2
 ```
-输出
+**输出**
 ```bash
 3
 ```
@@ -107,11 +107,11 @@ python 3_optparse.py -a 1 -b 2
 `argparse`让编写用户友好的命令行界面变得容易。值得注意的是，`argparse`是基于`optparse`编写的，因此两者在用法上非常相似。
 
 ---
-推荐
+**推荐**
 
 ⭐⭐⭐⭐⭐
 
-示例
+**示例**
 ```python
 import argparse
 
@@ -133,11 +133,11 @@ if __name__=='__main__':
     b = args.b
     print(add(a, b))
 ```
-运行
+**运行**
 ```bash
 python 4_argparse.py -a 1 -b 2
 ```
-输出
+**输出**
 ```bash
 3
 ```
