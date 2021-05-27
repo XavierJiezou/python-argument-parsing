@@ -104,7 +104,7 @@ python 3_optparse.py -a 1 -b 2
 3
 ```
 ## argparse👍
-`argparse`让编写用户友好的命令行界面变得容易。值得注意的是，`argparse`是基于`optparse`编写的，因此在用法上非常相似。
+`argparse`让编写用户友好的命令行界面变得容易。值得注意的是，`argparse`是基于`optparse`编写的，因此两者在用法上非常相似。
 
 ---
 推荐
