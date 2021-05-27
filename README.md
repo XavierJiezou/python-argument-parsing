@@ -14,11 +14,11 @@ They are all standard libraries of Python and do not need to be installed additi
 `sys.argv` is the **simplest implementation** for parsing command-line options, which is the list of command line arguments passed to a Python script. In particular, `argv[0]` represents the script name.
 
 ---
-Recommendation
+**Recommendation**
 
 ⭐⭐⭐⭐⭐
 
-Example
+**Example**
 ```python
 # 1_sys.argv.py
 import sys
@@ -31,11 +31,11 @@ def add(a, b):
 if __name__ == '__main__':
     print(add(int(sys.argv[1]), int(sys.argv[2])))
 ```
-Running
+**Running**
 ```bash
 python 1_sys.argv.py 1 2
 ```
-Output
+**Output**
 ```bash
 3
 ```
@@ -43,11 +43,11 @@ Output
 `getopt` module is a parser for command line options whose API is designed to be familiar to users of the C `getopt()` function, which helps scripts to parse the command line arguments in `sys.argv`. **But few people use it now, please use `argparse` module instead.**
 
 ---
-Recommendation
+**Recommendation**
 
 ⭐⭐⭐
 
-Example
+**Example**
 ```python
 import sys, getopt
 
@@ -62,11 +62,11 @@ if __name__ == "__main__":
     b = int(args[2])
     print(add(a, b))
 ```
-Running
+**Running**
 ```bash
 python 2_getopt.py -a 1 -b 2
 ```
-Output
+**Output**
 ```bash
 3
 ```
@@ -74,11 +74,11 @@ Output
 `optparse` is a more convenient, flexible, and powerful library for parsing command-line options than the old `getopt` module.
 
 ---
-Recommendation
+**Recommendation**
 
 ⭐⭐⭐⭐
 
-Example
+**Example**
 ```python
 # 3_optparse.py
 from optparse import OptionParser
@@ -97,11 +97,11 @@ if __name__ == '__main__':
     b = int(options.b)
     print(add(a, b))
 ```
-Running
+**Running**
 ```bash
 python 3_optparse.py -a 1 -b 2
 ```
-Output
+**Output**
 ```bash
 3
 ```
@@ -109,11 +109,11 @@ Output
 `argparse` module makes it easy to write user-friendly command-line interfaces. Note also that `argparse` is based on `optparse`, and therefore very similar in terms of usage.
 
 ---
-Recommendation
+**Recommendation**
 
 ⭐⭐⭐⭐⭐
 
-Example
+**Example**
 ```python
 import argparse
 
@@ -135,11 +135,11 @@ if __name__=='__main__':
     b = args.b
     print(add(a, b))
 ```
-Running
+**Running**
 ```bash
 python 4_argparse.py -a 1 -b 2
 ```
-Output
+**Output**
 ```bash
 3
 ```
