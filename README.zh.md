@@ -69,7 +69,7 @@ python 2_getopt.py -a 1 -b 2
 3
 ```
 ## optparse
-`OptParse`是一个更方便，灵活，强大的库，用于解析命令行选项，相比于之前的`getopt`模块。
+`optparse`是一个更方便，灵活，强大的库，用于解析命令行选项，相比于之前的`getopt`模块。
 
 ---
 推荐
@@ -104,7 +104,7 @@ python 3_optparse.py -a 1 -b 2
 3
 ```
 ## argparse👍
-`argparse`让编写用户友好的命令行界面变得容易。值得注意的是，`argparse`是基于`optParse`编写的，因此在用法上非常相似。
+`argparse`让编写用户友好的命令行界面变得容易。值得注意的是，`argparse`是基于`optparse`编写的，因此在用法上非常相似。
 
 ---
 推荐
