@@ -1,10 +1,11 @@
-简体中文 | [English](/README.md)
+English | [简体中文](/README.zh.md)
 # 1. Introduction
 There are four common ways to realize the command-line arguments parsing of Python.
 - `sys.argv`
 - `optparse`
 - `getopt`
 - `argparse`
+This is a summary of all Python command-line argument parsing Modules.
 # 2. Install
 They are all standard libraries of Python and do not need to be installed additionally.
 # 3. Usage
