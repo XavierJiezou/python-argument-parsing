@@ -1,3 +1,4 @@
+English | [简体中文](/README.zh.md)
 # 1. Introduction
 There are four common ways to realize the command-line arguments parsing of Python.
 - `sys.argv`
