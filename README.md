@@ -1,5 +1,4 @@
 English | [简体中文](/README.zh.md)
-<!-- TOC -->autoauto- [1. Introduction](#1-introduction)auto- [2. Install](#2-install)auto- [3. Usage](#3-usage)auto    - [3.1. sys.argv👍](#31-sysargv👍)auto    - [3.2. getopt](#32-getopt)auto    - [3.3. optparse](#33-optparse)auto    - [3.4. argparse👍](#34-argparse👍)auto- [4. Reference](#4-reference)autoauto<!-- /TOC -->
 # 1. Introduction
 There are four common ways to realize the command-line arguments parsing of Python.
 - `sys.argv`
